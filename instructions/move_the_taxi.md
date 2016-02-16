@@ -13,11 +13,11 @@ Here's the algorithm will use to move the taxi forward. We will go through is st
 The algorithm:
 
     1. initialize a global variable (declare it outside `onkeydown`) called `taxiLocationCounter` to 1;
-    * when the forward key is pressed increment `taxiLocationCounter` by 1;
-    * when the back key is pressed decrement `taxiLocationCounter` by 1;
-    * make sure that the counter variable never get's bigger than 9 or less than 1;
-    * translate the counter's value into class names;
-    * when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
+    2. when the forward key is pressed increment `taxiLocationCounter` by 1;
+    3. when the back key is pressed decrement `taxiLocationCounter` by 1;
+    4. make sure that the counter variable never get's bigger than 9 or less than 1;
+    5. translate the counter's value into class names;
+    6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
 
 ## Display the counter
 
