@@ -31,7 +31,7 @@ Log in to [GitHub](http://github.org) and fork this [repository](https://github.
 
 ### Look at it
 
-You should write all your code in `app.js`. The `support.js` file contains some helper functions that has been written for you, don't edit this file! All the HTML & CSS are supplied.
+You should write all your code in `app.js`. The `support.js` file contains some helper functions that have been written for you. Don't edit this file! All the HTML & CSS is supplied: don't edit these either!
 
 You need to install `http-server`. Install it using : `sudo npm install -g http-server`. To start the web server, open a terminal window, change into the CapeTownGreen folder (the one you cloned from GitHub) and type `http-server`.
 
