@@ -14,7 +14,7 @@ The key codes are:
 
  key code   | key name
 -----------|-----------
-39         | right
+36         | right
 37         | left
 38         | up
 39         | down            
