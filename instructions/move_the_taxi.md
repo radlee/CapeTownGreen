@@ -21,7 +21,7 @@ The algorithm:
 
 ## Display the counter
 
-Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function when the forward arrow is pressed.
+Create a global variable called `taxiLocationCounter` initialize it to 1. Increment it by one when the forward key is pressed, display the value of `taxiLocationCounter` on the screen using the `displayMessage` function.
 
 ## Translate counter into a classname
 
