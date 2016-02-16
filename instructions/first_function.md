@@ -14,10 +14,10 @@ The key codes are:
 
  key code   | key name
 -----------|-----------
-36         | right
 37         | left
 38         | up
-39         | down            
+39         | right
+40         | down            
 
 Open the [unit test](http://localhost:8080/tests.html) page and make sure the `keyCodeName` tests are passing. You'll need to refresh the page if you already have it open in your browser.
 
