@@ -19,4 +19,6 @@ Use the supplied `displayQueueCount` function to display the number of people qu
 
 When that is the case, make the Traffic Light red and load the people queueing onto the taxi. Use the supplied `displayTaxiPassengerCount` to display the number of passengers on the taxi. Remember to set the number of people at the rank to 0.
 
-After a 3 second delay (use [setTimeout](https://developer.mozilla.org/de/docs/Web/API/WindowTimers/setTimeout)) set the Traffic Light to green: the taxi should be able to pull away. Offload the passengers once you are in the ninth (last) block. Set the number of people on the taxi to 0.
+After a 3 second delay (use [setTimeout](https://developer.mozilla.org/de/docs/Web/API/WindowTimers/setTimeout)) set the Traffic Light to green: the taxi should be able to pull away.
+
+Offload the passengers once you are in the ninth (last) block. Set the number of people on the taxi to 0.
