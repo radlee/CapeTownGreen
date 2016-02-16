@@ -6,18 +6,22 @@ layout: default
 
 ![](/img/move-the-taxi.jpg)
 
-The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.slot-one-of-nine` to `.slot-nine-of-nine`. Attach the next class to the taxi elements as the forward key is pressed.
+The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.slot-one-of-nine` to `.slot-nine-of-nine`. Attach the next class to the taxi element as the forward key is pressed.
 
-The algorithm you will use to move the taxi forward is:
+Here's the algorithm will use to move the taxi forward. We will go through it step by step.
 
-1. initialize a global variable (declare it outside `onkeyup`) called `taxiLocationCounter` to 1;
-2. when the forward key is pressed increment `taxiLocationCounter` by 1;
-3. when the back key is pressed decrement `taxiLocationCounter` by 1;
-4. make sure that the counter variable never get's bigger than 9 or less than 1;
-5. translate the counter's value into class names;
-6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
+The algorithm:
 
-Go ahead and implement steps 1 to 4. Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function.
+    1. initialize a global variable (declare it outside `onkeydown`) called `taxiLocationCounter` to 1;
+    2. when the forward key is pressed increment `taxiLocationCounter` by 1;
+    3. when the back key is pressed decrement `taxiLocationCounter` by 1;
+    4. make sure that the counter variable never get's bigger than 9 or less than 1;
+    5. translate the counter's value into class names;
+    6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
+
+## Display the counter
+
+Display the value of `taxiLocationCounter` on the screen using the `displayMessage` function when the forward arrow is pressed.
 
 ## Translate counter into a classname
 
@@ -37,6 +41,8 @@ parameter  | returns          |
 
 Open the [unit test](http://localhost:8080/tests.html) page make sure the `createLocationClass` tests are passing. You need to refresh the page if you already have it open in your browser.
 
+## Display the classname
+
 Use the `createLocationClass` function to get the classname for the value of `taxiLocationCounter` and display it on the screen instead of the counter.
 
 ## Create moveForward function
@@ -45,17 +51,21 @@ You will now use the class names created from `taxiLocationCounter` to let the t
 
 Create a `moveForward` function, in the `app.js` file.
 
-Use the supplied `moveTaxi`. It takes these parameters: the class, the current location class, and the next location class.
+Use the supplied `moveTaxi`. It takes the class, the current location class, and the next location class as parameters.
 
-The algorithm for moving the `moveForward` function is:
+The algorithm for the `moveForward` function is:
 
-* use `createLocationClass`, call it with `taxiLocationCounter`, store the result in a variable called `currentLocation`;
+* call `createLocationClass` with `taxiLocationCounter`, store the result in a variable called `currentLocation`;
 * increment the `taxiLocationCounter` counter by 1;
-* use the `createLocationClass`, call it with the `taxiLocationCounter`, store the result in a variable called `newLocation`;
-* call moveTaxi with the `currentLocation` and `newLocation` variables which contains.
+* call `createLocationClass` with `taxiLocationCounter`, store the result in a variable called `newLocation`;
+* call `moveTaxi` with `currentLocation` and `newLocation` variables.
 
-> Refresh the tests to see if the tests for `moveForward` are passing.
+Refresh the tests to see if the tests for `moveForward` are passing.
+
+## Moving the taxi
 
 Use `moveForward` in the `onkeydown` function, when the forward key is pressed. The taxi should move forward.
 
-> See if you can get the taxi to reverse when the back key is pressed.
+## A little challenge
+
+See if you can get the taxi to reverse when the back key is pressed.

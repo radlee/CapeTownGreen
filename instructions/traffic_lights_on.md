@@ -6,11 +6,11 @@ layout: default
 
 ![](/img/traffic-lights.jpg)
 
-Now that you have the taxi moving we need to get the Traffic Light working and get the taxi's to stop at red lights.
+Now that you have the taxi moving we need to get the Traffic Light working and get the taxi to stop at red lights.
 
-For that we are going to create a constructor function / class to control Traffic Lights, it will use the `taxiLocationCounter` counter to find the one closest to the taxi.
+For that we are going to create a constructor function / class to control Traffic Lights, it will use the `taxiLocationCounter` counter to find the traffic light closest to the taxi.
 
-To change the traffic lights we need to add and remove CSS classes to the `robot` CSS elements using the [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) objects.
+To change the traffic lights we need to add and remove classes to/from the `robot` element using [`classList`](https://docs.webplatform.org/wiki/dom/Element/classList).
 
 Our traffic light constructor function should have these functions:
 
@@ -21,19 +21,19 @@ Our traffic light constructor function should have these functions:
 `makeRed`       | switch the red light on the traffic light
 `color`         | return the current color of the traffic light based on the internal state
 
-It should take a number as a constructor parameter which should be the current value of the `taxiLocationCounter`.
+It should take a number as a parameter, which should be the current value of `taxiLocationCounter`.
 
-Create a function similar to `createLocationClass` called `createTrafficLightClass` which take a number as a parameter and return a string like `.one-of-nine` through to `.nine-of-nine`.
+Create a function similar to `createLocationClass` called `createTrafficLightClass`. It should take a number as a parameter and return a string such as `.one-of-nine`.
 
-The css classes for each color is:
+The classes for each color are:
 
-color   | css classname
+color   | class
 --------|-------------------
 red     | lights-stop
 orange  | lights-slowdown
 green   | lights-go
 
-To locate a Traffic Light in the DOM you can use the `document.querySelector` function.
+To locate a Traffic Light in the DOM you can use the `document.querySelector` function, like you did for `body` in the first function.
 
 You can use it like this:
 
@@ -66,13 +66,12 @@ Use code like this in the `makeGreen`, `makeRed` and `makeOrange` functions.
 The `color` function could check what classes the element in scope has, using code like this:
 
 {% highlight javascript %}
-
-if (trafficLightElement.classList.contains("lights-slowdown"))
+if (trafficLightElement.classList.contains("lights-slowdown")){
     return 'orange';
-
+}
 {% endhighlight %}
 
-Create a TrafficLight object instance in the onkeydown function using the `taxiLocationCounter` to get the TrafficLight closest to the taxi. Here's an example:
+Create a TrafficLight object instance in the `onkeydown` function using the `taxiLocationCounter` to get the TrafficLight closest to the taxi. Here's an example:
 
 {% highlight javascript %}
 var trafficLight = new TrafficLight(taxiLocationCounter);
