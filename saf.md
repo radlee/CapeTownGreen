@@ -6,11 +6,21 @@ layout: default
 
 ## Configure your repository for a fork
 
-List the current remotes for your fork: `git remote -v`. It should show `origin  https://github.com/YOUR_USERNAME/CapeTownGreen.git (fetch)` and `origin  https://github.com/YOUR_USERNAME/CapeTownGreen.git (push)`.
+List the current remotes for your fork: `git remote -v`. It should show
 
-Now add the codeX version of the repository as an upstream repository: `git remote add upstream https://github.com/codex-academy/CapeTownGreen.git`.
+`origin  https://github.com/YOUR_USERNAME/CapeTownGreen.git (fetch)`
 
-Let's check that it works using: `git remote -v`. You should now see the two `origin`s from before, plus `upstream https://github.com/codex-academy/CapeTownGreen.git (fetch)` and `upstream https://github.com/codex-academy/CapeTownGreen.git (fetch)`.
+`origin  https://github.com/YOUR_USERNAME/CapeTownGreen.git (push)`.
+
+Now add the codeX version of the repository as an upstream repository:
+
+`git remote add upstream https://github.com/codex-academy/CapeTownGreen.git`.
+
+Let's check that it works using: `git remote -v`. You should now see the two `origin`s from before, plus
+
+`upstream https://github.com/codex-academy/CapeTownGreen.git (fetch)`
+
+`upstream https://github.com/codex-academy/CapeTownGreen.git (push)`
 
 ## Sync your fork
 
