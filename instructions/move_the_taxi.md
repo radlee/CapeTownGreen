@@ -6,18 +6,18 @@ layout: default
 
 ![](/img/move-the-taxi.jpg)
 
-The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.slot-one-of-nine` to `.slot-nine-of-nine`. Attach the next class to the taxi element as the forward key is pressed.
+The taxi should **move forward** when the **right arrow** is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.slot-one-of-nine` to `.slot-nine-of-nine`. Attach the next class to the taxi element as the forward key is pressed.
 
 Here's the algorithm will use to move the taxi forward. We will go through it step by step.
 
 The algorithm:
 
-    1. initialize a global variable (declare it outside `onkeydown`) called `taxiLocationCounter` to 1;
-    2. when the forward key is pressed increment `taxiLocationCounter` by 1;
-    3. when the back key is pressed decrement `taxiLocationCounter` by 1;
-    4. make sure that the counter variable never get's bigger than 9 or less than 1;
-    5. translate the counter's value into class names;
-    6. when the forward key is pressed, replace the old location class with the new location class on the taxi html element.
+1. initialize a global variable (declare it outside `onkeydown`) called `taxiLocationCounter` to 1;
+2. when the forward key (right arrow) is pressed increment `taxiLocationCounter` by 1;
+3. when the back key is pressed decrement `taxiLocationCounter` by 1;
+4. make sure that the counter variable never get's bigger than 9 or less than 1;
+5. translate the counter's value into class names;
+6. when the forward key (right arrow) is pressed, replace the old location class with the new location class on the taxi html element.
 
 ## Display the counter
 
