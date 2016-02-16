@@ -31,7 +31,7 @@ Log in to [GitHub](http://github.org) and fork this [repository](https://github.
 
 ### Look at it
 
-You should write all your code in `app.js`.
+You should write all your code in `app.js`. The `support.js` file contains some helper functions that has been written for you, don't edit this file! All the HTML & CSS are supplied.
 
 You need to install `http-server`. Install it using : `sudo npm install -g http-server`. To start the web server, open a terminal window, change into the CapeTownGreen folder (the one you cloned from GitHub) and type `http-server`.
 
@@ -46,7 +46,3 @@ If you open `http://localhost:8080/tests.html` you should see some red text: the
 [Move the taxi](instructions/move_the_taxi.html)
 
 [Switch on the Traffic Lights](instructions/traffic_lights_on.html)
-
-[Get people on the taxi](instructions/passengers.html)
-
-[Group passengers](instructions/group_passengers.html)
