@@ -8,7 +8,7 @@ layout: default
 
 The taxi should move forward when the right arrow is pressed. The taxi's position is determined by a class attached to it. There are nine classes: `.slot-one-of-nine` to `.slot-nine-of-nine`. Attach the next class to the taxi element as the forward key is pressed.
 
-Here's the algorithm will use to move the taxi forward. We will go through is step by step.
+Here's the algorithm will use to move the taxi forward. We will go through it step by step.
 
 The algorithm:
 
