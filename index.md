@@ -27,7 +27,10 @@ The DOM skills introduced are:
 
 ### Get the code
 
-Log in to [GitHub](http://github.org) and fork this [repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now clone your fork of this repository into your projects folder. Do all the work for this project in that folder.
+Log in to [GitHub](http://github.org) and fork the [CapeTownGreen repository](https://github.com/codex-academy/CapeTownGreen) into your profile. Now `git clone` your fork of this repository into your projects folder. Do all the work for this project in that folder.
+
+Now let's configure your repository to work properly as a fork. Follow the instructions in [Configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/). Fairly regularly, you'll want to check if the upstream repository (the one that you forked from) has any changes, and bring them into yours. Follow the instructions in [Syncing a fork](https://help.github.com/articles/syncing-a-fork/).
+
 
 ### Look at it
 
