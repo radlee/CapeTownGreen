@@ -109,14 +109,3 @@ describe("TrafficLight", function(){
     });
 
 });
-
-describe("The taxi", function(){
-
-    it("should stop", function(){
-        assert.equal(1,2);
-    });
-
-    it("should go", function(){
-        assert.equal(1,2);
-    });
-});
